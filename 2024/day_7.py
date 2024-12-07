@@ -27,7 +27,7 @@ def valid_equation(eq):
             + valid_equation((v, term_mul))
             + valid_equation((v, term_concat)))
 
-def part1():
+def res():
     eqs = parse_input()
     total = 0
     for eq in eqs:
@@ -35,4 +35,4 @@ def part1():
             total += eq[0]
     print(total)
 
-part1()
+res()
